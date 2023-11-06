@@ -1,0 +1,144 @@
+// Place your key bindings in this file to override the defaults
+[
+
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
+      },
+      {
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+      },
+
+      // NAVIGATION HORIZONTAL
+         // Navigate Splits
+      {
+          "key": "ctrl+h",
+          "command": "workbench.action.navigateLeft"
+      },
+      {
+          "key": "ctrl+l",
+          "command": "workbench.action.navigateRight"
+      },
+      {
+          "key": "ctrl+k",
+          "command": "workbench.action.navigateUp"
+      },
+      {
+          "key": "ctrl+j",
+          "command": "workbench.action.navigateDown"
+      },
+
+      // FILE EXPLORER
+      {
+        "command": "explorer.newFile",
+        "key": "a",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+      {
+        "command": "renameFile",
+        "key": "r",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+      {
+        "command": "filesExplorer.copy",
+        "key": "c",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+      {
+        "command": "filesExplorer.paste",
+        "key": "p",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+      {
+          "command": "deleteFile",
+          "key": "d",
+          "when": "filesExplorerFocus && !inputFocus"
+      },
+      {
+          "command": "explorer.newFolder",
+          "key": "f",
+          "when": "filesExplorerFocus && !inputFocus"
+      },
+
+      // TERMINAL
+      {
+          "command": "workbench.action.terminal.toggleTerminal",
+          "key": "ctrl+\\",
+          "when": "terminal.active"
+      },
+      {
+          "command": "-workbench.action.terminal.toggleTerminal",
+          "key": "ctrl+`",
+          "when": "terminal.active"
+      },
+      {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+      },
+
+      // MOVE LINES
+      {
+        "command": "editor.action.moveLinesDownAction",
+        "key": "alt+j"
+      },
+      {
+        "command": "editor.action.moveLinesUpAction",
+        "key": "alt+k"
+      },
+    
+      // Quick Fix moving
+      // remove New file shortcut CRTL+N  
+      {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+      },
+      // Sticky scroll line movement 
+      {
+        "key": "ctrl+n",
+        "command": "editor.action.selectNextStickyScrollLine",
+        "when": "stickyScrollFocused"
+      },
+      {
+        "key": "ctrl+p",
+        "command": "editor.action.selectPreviousStickyScrollLine",
+        "when": "stickyScrollFocused"
+      },
+      // Select Next/Prev Code Action
+      {
+        "key": "ctrl+n",
+        "command": "selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+      },
+      
+      {
+        "key": "ctrl+p",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
+      },
+      {
+        "key": "alt+l",
+        "command": "editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+      },
+      {
+        "key": "ctrl+right",
+        "command": "-editor.action.inlineSuggest.acceptNextWord",
+        "when": "inlineSuggestionVisible && !editorReadonly"
+      },
+      // NAVIGATE IN QUICK OPEN
+      {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+      },
+      {
+          "key": "ctrl+p",
+          "command": "workbench.action.quickOpenNavigatePrevious",
+          "when": "inQuickOpen"
+      }
+      
+      
+      
+]
